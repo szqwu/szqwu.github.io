@@ -1,14 +1,16 @@
 ---
-title: "Paper Title Number 1"
+title: "Self-prompting Large Vision Models for Few-Shot Medical Image Segmentation"
 collection: publications
-category: manuscripts
+category: none
 permalink: /publication/2009-10-01-paper-title-number-1
-excerpt: 'This paper is about the number 1. The number 2 is left for future work.'
-date: 2009-10-01
-venue: 'Journal 1'
-slidesurl: 'http://academicpages.github.io/files/slides1.pdf'
-paperurl: 'http://academicpages.github.io/files/paper1.pdf'
-citation: 'Your Name, You. (2009). &quot;Paper Title Number 1.&quot; <i>Journal 1</i>. 1(1).'
+excerpt: '**Qi Wu**\*, Yuyao Zhang\*, and Marawan Elbatel'
+date: 2023-10-14
+venue: 'MICCAI workshop on domain adaptation and representation transfer'
+# slidesurl: 'http://academicpages.github.io/files/slides1.pdf'
+paperurl: 'https://arxiv.org/pdf/2308.07624'
+# citation: 'Wu, Qi, Yuyao Zhang, and Marawan Elbatel. "Self-prompting large vision models for few-shot medical image segmentation." MICCAI workshop on domain adaptation and representation transfer. Cham: Springer Nature Switzerland, 2023.'
 ---
 
-The contents above will be part of a list of publications, if the user clicks the link for the publication than the contents of section will be rendered as a full page, allowing you to provide more information about the paper for the reader. When publications are displayed as a single page, the contents of the above "citation" field will automatically be included below this section in a smaller font.
+Abstract
+======
+Recent advancements in large foundation models have shown promising potential in the medical industry due to their flexible prompting capability. One such model, the Segment Anything Model (SAM), a prompt-driven segmentation model, has shown remarkable performance improvements, surpassing state-of-the-art approaches in medical image segmentation. However, existing methods primarily rely on tuning strategies that require extensive data or prior prompts tailored to the specific task, making it particularly challenging when only a limited number of data samples are available. In this paper, we propose a novel perspective on self-prompting in medical vision applications. Specifically, we harness the embedding space of SAM to prompt itself through a simple yet effective linear pixel-wise classifier. By preserving the encoding capabilities of the large model, the contextual information from its decoder, and leveraging its interactive promptability, we achieve competitive results on multiple datasets (i.e. improvement of more than 15% compared to fine-tuning the mask decoder using a few images). Our code is available at https://github.com/PeterYYZhang/few-shot-self-prompt-SAM
