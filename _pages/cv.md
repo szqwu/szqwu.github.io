@@ -74,12 +74,12 @@ redirect_from:
 
 {% include base_path %} -->
 
-Detailed CV can be find [here](/files/wuqi_cv.pdf)
+Detailed CV can be found [here](/files/wuqi_cv.pdf)
 
 Education
 ======
 * BSc in Computer Science and in Mathematics, The Hong Kong University of Science and Technology, Sept 2021 - Aug 2025
-  * Cumulative GPA (CGA): 4.095/4.3 (Ranked 2nd in major cohort)
+  * Cumulative GPA (CGA): 4.095/4.3 (Ranked 2nd in BSc Computer Science cohort)
   * Major GPA: 4.129/4.3
 
 <!-- * UG Exchange, Stanford University, Jun 2023 - Aug 2023
@@ -90,10 +90,10 @@ Education
 
 Experience
 ======
-* Research Assistant, The Hong Kong University of Science and Technology, Feb 2024 - Present
+* Research Intern, The Hong Kong University of Science and Technology, Feb 2024 - Present
   * Working with Prof. Chi-Keung Tang and Yu-Wing Tai
   * Topics: computer vision, multimodality, large language models
-  * MotionLLM project available on arXiv
+  * Motion-Agent project available on arXiv
 
 * Teaching Assistant, COMP 2012: Object-Oriented Programming and Data Structures, Jul 2024 - Aug 2024
   * Designed and implemented labs to reinforce key concepts in object-oriented programming and data structures
