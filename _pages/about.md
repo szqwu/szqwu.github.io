@@ -11,7 +11,8 @@ redirect_from:
 
 I am currently a final-year undergraduate student at [The Hong Kong University of Science and Technology](https://hkust.edu.hk/), majoring in Computer Science and Mathematics. I am currently working with [Prof. Chi-Keung Tang](https://cse.hkust.edu.hk/~cktang/bio.html) and [Prof. Yu-Wing Tai](https://yuwingtai.github.io/).
 
-I am actively looking for researcher / Ph.D. opportunities. Please check out my [CV](/files/wuqi_cv.pdf).
+I am actively looking for researcher / Ph.D. opportunities. 
+<!-- Please check out my [CV](/files/wuqi_cv.pdf). -->
 
 <!-- A data-driven personal website
 ======
