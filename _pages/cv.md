@@ -74,7 +74,7 @@ redirect_from:
 
 {% include base_path %} -->
 
-Detailed CV can be found [here](/files/wuqi_cv.pdf)
+<!-- Detailed CV can be found [here](/files/wuqi_cv.pdf) -->
 
 Education
 ======
@@ -90,7 +90,7 @@ Education
 
 Experience
 ======
-* Research Intern, The Hong Kong University of Science and Technology, Feb 2024 - Present
+* Researcher, The Hong Kong University of Science and Technology, Feb 2024 - Present
   * Working with Prof. Chi-Keung Tang and Yu-Wing Tai
   * Topics: computer vision, multimodality, large language models
   * Motion-Agent project available on arXiv
@@ -99,7 +99,7 @@ Experience
   * Designed and implemented labs to reinforce key concepts in object-oriented programming and data structures
   * Developed one of three major programming assignments
 
-* Research Participant, Undergraduate Research Opportunity Program (UROP), Sept 2022 - Aug 2023
+* Undergraduate Researcher, Undergraduate Research Opportunity Program (UROP), Sept 2022 - Aug 2023
   * Supervisor: Prof. Xiaomeng Li
   * Topics: medical image analysis, multimodality, image segmentation
   * Paper accepted by MICCAI 2023 DART
