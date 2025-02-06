@@ -4,8 +4,8 @@ collection: publications
 category: none
 permalink: /publications/Motion-Agent
 excerpt: '**Qi Wu**\*, Yubo Zhao\*, Yifan Wang, Xinhang Liu, Yu-Wing Tai, Chi-Keung Tang'
-date: 2024-10-06
-venue: 'arXiv'
+date: 2025-02-06
+venue: 'ICLR'
 # slidesurl: 'http://academicpages.github.io/files/slides2.pdf'
 paperurl: 'https://arxiv.org/pdf/2405.17013'
 # citation: 'Your Name, You. (2010). &quot;Paper Title Number 2.&quot; <i>Journal 1</i>. 1(2).'
