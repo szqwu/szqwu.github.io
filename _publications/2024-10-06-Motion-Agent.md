@@ -7,7 +7,9 @@ excerpt: '**Qi Wu**\*, Yubo Zhao\*, Yifan Wang, Xinhang Liu, Yu-Wing Tai, Chi-Ke
 date: 2025-02-06
 venue: 'ICLR'
 # slidesurl: 'http://academicpages.github.io/files/slides2.pdf'
-paperurl: 'https://arxiv.org/pdf/2405.17013'
+paperurl: 'https://arxiv.org/abs/2405.17013'
+codeurl: 'https://github.com/szqwu/Motion-Agent'
+pageurl: 'https://knoxzhao.github.io/Motion-Agent/'
 # citation: 'Your Name, You. (2010). &quot;Paper Title Number 2.&quot; <i>Journal 1</i>. 1(2).'
 ---
 
