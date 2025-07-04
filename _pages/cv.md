@@ -79,8 +79,8 @@ redirect_from:
 Education
 ======
 * BSc in Computer Science and in Mathematics, The Hong Kong University of Science and Technology, Sept 2021 - Aug 2025
-  * Cumulative GPA (CGA): 4.095/4.3 (Ranked 2nd in BSc Computer Science cohort)
-  * Major GPA: 4.129/4.3
+  * Cumulative GPA (CGA): 3.994/4.3 (Ranked 1st in BSc Computer Science cohort)
+  * Major GPA: 4.034/4.3
 
 <!-- * UG Exchange, Stanford University, Jun 2023 - Aug 2023
   * Related Coursework: Machine Learning (PG level), Stochastic Process, Introduction to High Performance Computing
@@ -88,12 +88,18 @@ Education
 * UG Exchange, ETH Zürich, Sept 2023 - Feb 2024
   * Related Coursework: Deep Learning (PG level), Computer Systems (Operating Systems + Distributed Systems), Applied Regression Analysis, Game Theory and Control (PG level) -->
 
+Publications
+======
+  <ul>{% for post in site.publications reversed %}
+    {% include archive-single-cv.html %}
+  {% endfor %}</ul>
+
 Experience
 ======
 * Researcher, The Hong Kong University of Science and Technology, Feb 2024 - Present
   * Working with Prof. Chi-Keung Tang and Yu-Wing Tai
-  * Topics: computer vision, multimodality, large language models
-  * Motion-Agent project available on arXiv
+  * Topics: computer vision, multimodality, large language models, generative agents
+  <!-- * Motion-Agent project available on arXiv -->
 
 * Teaching Assistant, COMP 2012: Object-Oriented Programming and Data Structures, Jul 2024 - Aug 2024
   * Designed and implemented labs to reinforce key concepts in object-oriented programming and data structures
@@ -114,11 +120,27 @@ Experience
 * Linux compute nodes (SSH, Conda environments)
 * Source code management with git -->
 
-Publications
+Honors and Awards
 ======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
+### Academic Achievement Medal
+HKUST · Jul 2025  
+- The **_highest_** academic honor bestowed by the University on undergraduates upon graduation.
+
+### Champion of Best Final Year Project (FYP) Award  
+HKUST CSE Department · Jun 2025  
+
+### Dean's List  
+HKUST School of Engineering · Fall 2021, Spring 2022, Fall 2022, Spring 2023, Spring 2024  
+
+### University’s Scholarship Scheme for Continuing Undergraduate Students  
+HKUST · 2021–2022, 2022–2023, 2023–2024  
+- HK\$40,000, highest in the scheme, top 2nd percentile of all continuing UG students (i.e., CGA of 3.980 or above)
+
+### Runner-up in HKUST Robomaster Internal Competition  
+HKUST Robomaster Team · Dec 2022  
+- Acted as the software leader  
+- Designed and implemented the software system and drivers
+
 
 <!-- Talks
 ======
