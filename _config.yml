@@ -24,11 +24,11 @@ author:
   avatar           : "profile.jpg"
   name             : "Wu, Qi"
   pronouns         : # example: "she/her"  
-  bio              : "UG Student at HKUST"
-  location         : "Hong Kong SAR" 
-  employer         : "HKUST"
+  bio              : "Graduate Student at CMU"
+  location         : "PA, USA" 
+  employer         : "CMU"
   uri              : # URL
-  email            : "qwuaz@connect.ust.hk" 
+  email            : "qiwu2@andrew.cmu.edu" 
 
   # Academic websites
   arxiv            : # URL - Update with the correct link to your profile
