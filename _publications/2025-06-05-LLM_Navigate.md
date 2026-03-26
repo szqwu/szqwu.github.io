@@ -1,15 +1,13 @@
 ---
 title: "Navigating Motion Agents in Dynamic and Cluttered Environments through LLM Reasoning"
 collection: publications
-category: none
+category: manuscripts
 permalink: /publications/LLM_Navigate
 excerpt: 'Yubo Zhao\*, **Qi Wu**\*, Yifan Wang, Xinhang Liu, Yu-Wing Tai, Chi-Keung Tang'
 date: 2025-06-05
 venue: 'arXiv'
-# slidesurl: 'http://academicpages.github.io/files/slides1.pdf'
 paperurl: 'https://arxiv.org/abs/2503.07323'
-# codeurl: 'https://github.com/PeterYYZhang/few-shot-self-prompt-SAM'
-# citation: 'Wu, Qi, Yuyao Zhang, and Marawan Elbatel. "Self-prompting large vision models for few-shot medical image segmentation." MICCAI workshop on domain adaptation and representation transfer. Cham: Springer Nature Switzerland, 2023.'
+teaser: llm-navigate-teaser.png
 ---
 
 Abstract

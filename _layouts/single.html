@@ -63,10 +63,27 @@ layout: default
       </section>
 
       <footer class="page__meta">
-        {% if site.data.ui-text[site.locale].meta_label %}
-          <h4 class="page__meta-title">{{ site.data.ui-text[site.locale].meta_label }}</h4>
+        {% if page.collection == 'publications' %}
+          <div class="pub-card__links">
+            {% if page.pageurl %}
+              <a href="{{ page.pageurl }}" class="pub-btn"><i class="fa fa-globe" aria-hidden="true"></i> Project Page</a>
+            {% endif %}
+            {% if page.paperurl %}
+              <a href="{{ page.paperurl }}" class="pub-btn"><i class="ai ai-arxiv" aria-hidden="true"></i> arXiv</a>
+            {% endif %}
+            {% if page.codeurl %}
+              <a href="{{ page.codeurl }}" class="pub-btn"><i class="fab fa-github" aria-hidden="true"></i> Code</a>
+            {% endif %}
+            {% if page.slidesurl %}
+              <a href="{{ page.slidesurl }}" class="pub-btn"><i class="fa fa-file-powerpoint" aria-hidden="true"></i> Slides</a>
+            {% endif %}
+          </div>
+        {% else %}
+          {% if site.data.ui-text[site.locale].meta_label %}
+            <h4 class="page__meta-title">{{ site.data.ui-text[site.locale].meta_label }}</h4>
+          {% endif %}
+          {% include page__taxonomy.html %}
         {% endif %}
-        {% include page__taxonomy.html %}
       </footer>
 
       {% if page.share %}{% include social-share.html %}{% endif %}

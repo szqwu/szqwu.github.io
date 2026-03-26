@@ -1,16 +1,15 @@
 ---
 title: "Motion-Agent: A Conversational Framework for Human Motion Generation with LLMs"
 collection: publications
-category: none
+category: conferences
 permalink: /publications/Motion-Agent
 excerpt: '**Qi Wu**\*, Yubo Zhao\*, Yifan Wang, Xinhang Liu, Yu-Wing Tai, Chi-Keung Tang'
 date: 2025-02-06
 venue: 'ICLR'
-# slidesurl: 'http://academicpages.github.io/files/slides2.pdf'
 paperurl: 'https://arxiv.org/abs/2405.17013'
 codeurl: 'https://github.com/szqwu/Motion-Agent'
 pageurl: 'https://knoxzhao.github.io/Motion-Agent/'
-# citation: 'Your Name, You. (2010). &quot;Paper Title Number 2.&quot; <i>Journal 1</i>. 1(2).'
+teaser: motion-agent-teaser.png
 ---
 
 Abstract

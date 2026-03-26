@@ -8,10 +8,10 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Wu, Qi"
+title                    : "Qi Wu"
 title_separator          : "-"
-name                     : &name "Wu, Qi"
-description              : &description "personal description"
+name                     : &name "Qi Wu"
+description              : &description "Qi Wu - MSR student at Carnegie Mellon University, researching computer vision, multimodality, and generative agents."
 url                      : https://szqwu.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "szqwu/szqwu.github.io"
@@ -22,7 +22,7 @@ repository               : "szqwu/szqwu.github.io"
 author:
   # Biographic information
   avatar           : "profile.jpg"
-  name             : "Wu, Qi"
+  name             : "Qi Wu"
   pronouns         : # example: "she/her"  
   bio              : "Graduate Student at CMU"
   location         : "PA, USA" 
@@ -78,7 +78,7 @@ publication_category:
   books:
     title: 'Books'
   manuscripts:
-    title: 'Journal Articles'    
+    title: 'Preprints'    
   conferences:
     title: 'Conference Papers'
   none:
@@ -136,7 +136,7 @@ facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 :  # Open Graph/Twitter default site image
+og_image                 : "profile.jpg"
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
@@ -211,16 +211,7 @@ kramdown:
 
 # These settings control the types of collections used by the template
 collections:
-  teaching:
-    output: true
-    permalink: /:collection/:path/
   publications:
-    output: true
-    permalink: /:collection/:path/
-  portfolio:
-    output: true
-    permalink: /:collection/:path/
-  talks:
     output: true
     permalink: /:collection/:path/
 
@@ -245,15 +236,6 @@ defaults:
     values:
       layout: single
       author_profile: true
-  # _teaching
-  - scope:
-      path: ""
-      type: teaching
-    values:
-      layout: single
-      author_profile: true
-      share: true
-      comments: true
   # _publications
   - scope:
       path: ""
@@ -261,25 +243,8 @@ defaults:
     values:
       layout: single
       author_profile: true
-      share: true
-      comments: true
-  # _portfolio
-  - scope:
-      path: ""
-      type: portfolio
-    values:
-      layout: single
-      author_profile: true
-      share: true
-      comment: true
-  # _talks
-  - scope:
-      path: ""
-      type: talks
-    values:
-      layout: talk
-      author_profile: true
-      share: true
+      share: false
+      comments: false
 
 
 # Sass/SCSS
