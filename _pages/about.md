@@ -14,7 +14,7 @@ My research interests lie in **computer vision**, **multimodality**, and **gener
 
 I am actively looking for researcher / Ph.D. opportunities.
 
-# Selected Publications
+# Research
 
 {% if site.publication_category %}
   {% for category in site.publication_category %}

@@ -42,135 +42,453 @@
 
 
 /* ==========================================================================
-   Custom styles
+   Custom styles - polish
    ========================================================================== */
 
-.pub-card {
-  display: flex;
-  gap: 1.25rem;
-  padding: 1.25rem;
-  margin-bottom: 1.25rem;
-  background: #f8f9fa;
-  border-radius: 8px;
-  border: 1px solid $border-color;
-  transition: box-shadow 0.2s ease;
+/* Global type & layout
+   ---------------------------------------------------------------------- */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-feature-settings: "kern", "liga", "ss01";
+  color: $text-color;
+  letter-spacing: -0.005em;
+}
+
+#main {
+  margin-top: 2.5em;
+}
+
+/* Generous body content sizing and readability */
+.page__content {
+  font-size: 0.98em;
+  line-height: 1.7;
+
+  p, li {
+    color: $text-color;
+  }
+
+  p {
+    margin: 0 0 1.1em;
+  }
+
+  strong {
+    color: $darker-gray;
+    font-weight: 600;
+  }
+
+  /* Refined links: no underline, subtle bottom border on hover */
+  a {
+    color: $link-color;
+    text-decoration: none;
+    border-bottom: 1px solid mix(#fff, $link-color, 70%);
+    transition: border-color 0.15s ease, color 0.15s ease;
+
+    &:hover {
+      text-decoration: none;
+      border-bottom-color: $link-color;
+    }
+  }
+}
+
+/* Page title (e.g. "About me", "CV", "Publications")
+   ---------------------------------------------------------------------- */
+.page__title {
+  margin: 0 0 0.6em !important;
+  font-size: 2em;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  line-height: 1.15;
+  color: $darker-gray;
+}
+
+/* Section headings inside content
+   ---------------------------------------------------------------------- */
+.page__content {
+  h1 {
+    position: relative;
+    margin: 1.9em 0 1em !important;
+    padding: 0 0 0.35em !important;
+    font-size: 1.65em;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: $darker-gray;
+    border-bottom: none !important;
+
+    &:after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 36px;
+      height: 3px;
+      background: $primary-color;
+      border-radius: 2px;
+    }
+  }
+
+  h2 {
+    margin: 1.7em 0 0.7em !important;
+    padding: 0 0 0.3em !important;
+    font-size: 1.35em;
+    font-weight: 700;
+    letter-spacing: -0.015em;
+    color: $darker-gray;
+    border-bottom: 1px solid mix(#fff, $border-color, 30%) !important;
+  }
+
+  h3 {
+    margin: 1.4em 0 0.5em;
+    font-size: 1.08em;
+    font-weight: 600;
+    color: $darker-gray;
+  }
+
+  /* Tighter, more elegant lists */
+  ul {
+    padding-left: 1.25em;
+
+    li {
+      margin-bottom: 0.45em;
+      line-height: 1.65;
+    }
+  }
+
+  /* The "---" between publication categories on the home page */
+  hr {
+    margin: 0.5em 0;
+    border: none;
+    border-top: 1px solid mix(#fff, $border-color, 30%);
+  }
+}
+
+/* Masthead
+   ---------------------------------------------------------------------- */
+
+.masthead {
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: saturate(180%) blur(10px);
+  -webkit-backdrop-filter: saturate(180%) blur(10px);
+  border-bottom: 1px solid mix(#fff, $primary-color, 90%);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
+}
+
+.masthead__inner-wrap {
+  padding: 1em 1.4em !important;
+}
+
+.masthead__menu-item--lg a {
+  font-weight: 700;
+  letter-spacing: -0.015em;
+  font-size: 1.02em;
+}
+
+.greedy-nav {
+  background: transparent !important;
+
+  .visible-links a {
+    padding: 0 0.6em;
+    color: $dark-gray;
+    font-weight: 500;
+    transition: color 0.15s ease;
+
+    &:before {
+      background: $primary-color !important;
+      height: 2px !important;
+    }
+
+    &:hover {
+      color: $primary-color;
+    }
+  }
+}
+
+/* Sidebar / author profile
+   ---------------------------------------------------------------------- */
+
+.sidebar {
+  opacity: 1 !important;
+}
+
+.sidebar .author__avatar {
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.sidebar .author__avatar img {
+  max-width: 200px;
+  border: 5px solid #fff !important;
+  padding: 0 !important;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 
   &:hover {
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+  }
+}
+
+.sidebar .author__name {
+  font-weight: 700;
+  font-size: 1.3em;
+  letter-spacing: -0.015em;
+  color: $darker-gray;
+  margin-top: 0.6em !important;
+  margin-bottom: 0.25em !important;
+}
+
+.sidebar .author__bio {
+  color: $gray;
+  font-size: 0.92em;
+  font-style: normal;
+  margin-bottom: 1.1em !important;
+  line-height: 1.5;
+}
+
+.author__urls.social-icons {
+  font-size: 0.93em;
+
+  li {
+    padding: 0.22em 0;
+    color: $dark-gray;
+    line-height: 1.5;
+  }
+
+  a {
+    color: $dark-gray !important;
+    transition: color 0.15s ease;
+
+    &:hover {
+      color: $primary-color !important;
+      text-decoration: none !important;
+    }
+  }
+
+  i {
+    color: $primary-color;
+    width: 1.4em;
+    text-align: center;
+    margin-right: 0.15em;
+  }
+}
+
+/* Publication entry cards
+   ---------------------------------------------------------------------- */
+
+.pub-entry {
+  display: flex;
+  gap: 1.75rem;
+  padding: 1.5em 0;
+  border-bottom: 1px solid mix(#fff, $border-color, 35%);
+  align-items: center;
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  &:first-child {
+    padding-top: 1em;
   }
 
   @include breakpoint(max-width $small) {
     flex-direction: column;
+    gap: 0.9rem;
+    align-items: stretch;
   }
 }
 
-.pub-card__teaser {
-  flex: 0 0 220px;
-  max-width: 220px;
+.pub-entry__img {
+  flex: 0 0 260px;
+  max-width: 260px;
 
   @include breakpoint(max-width $small) {
     flex: none;
     max-width: 100%;
   }
 
+  a {
+    display: block;
+    text-decoration: none !important;
+    border-bottom: none !important;
+    overflow: hidden;
+    border-radius: 8px;
+  }
+
   img {
     width: 100%;
     height: auto;
-    border-radius: 4px;
-    object-fit: cover;
+    display: block;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    background: #fafafa;
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+  }
+
+  a:hover img {
+    transform: scale(1.025);
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.10);
   }
 }
 
-.pub-card__content {
+.pub-entry__text {
   flex: 1;
   min-width: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
-  .archive__item-title {
-    margin-top: 0;
-    font-size: $type-size-4;
-    line-height: 1.3;
-  }
+.pub-entry__title {
+  margin: 0 0 0.4em 0 !important;
+  padding: 0 !important;
+  font-size: 1.18em;
+  font-weight: 600;
+  line-height: 1.35;
+  letter-spacing: -0.015em;
+  border-bottom: none !important;
 
-  .archive__item-excerpt {
-    font-size: $type-size-6;
-    color: $gray;
-    margin-bottom: 0.5rem;
-  }
+  a {
+    color: $darker-gray !important;
+    text-decoration: none !important;
+    border-bottom: none !important;
+    transition: color 0.15s ease;
 
-  p {
-    margin-bottom: 0.35rem;
-    font-size: $type-size-6;
+    &:hover {
+      color: $primary-color !important;
+      border-bottom: none !important;
+    }
   }
 }
 
-.pub-card__links {
+.pub-entry__authors {
+  margin: 0 0 0.3em 0 !important;
+  font-size: 0.92em;
+  color: $dark-gray;
+  line-height: 1.5;
+
+  strong {
+    color: $darker-gray;
+    font-weight: 600;
+  }
+}
+
+.pub-entry__venue {
+  margin: 0 0 0.65em 0 !important;
+  font-size: 0.88em;
+  color: $gray;
+
+  i {
+    font-weight: 500;
+  }
+}
+
+.pub-entry__links {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem;
-  margin-top: 0.6rem;
+  gap: 0.45em;
+  margin-top: 0.5em;
 }
 
 .pub-btn {
   display: inline-flex;
   align-items: center;
-  gap: 0.3rem;
-  padding: 0.3rem 0.7rem;
-  font-size: $type-size-7;
+  gap: 0.4em;
+  padding: 0.32em 0.8em;
+  font-size: 0.8em;
   font-weight: 500;
-  color: $primary-color;
-  background: #fff;
+  color: $primary-color !important;
+  background: transparent;
   border: 1px solid mix(#fff, $primary-color, 60%);
   border-radius: 999px;
   text-decoration: none !important;
-  transition: all 0.15s ease;
+  transition: all 0.18s ease;
+  white-space: nowrap;
+  line-height: 1.4;
 
   &:hover {
     background: $primary-color;
-    color: #fff;
-    text-decoration: none;
+    border-color: $primary-color !important;
+    color: #fff !important;
+    text-decoration: none !important;
+    border-bottom: 1px solid $primary-color !important;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 6px rgba(43, 87, 151, 0.18);
   }
 
   i {
-    font-size: 0.85em;
+    font-size: 0.95em;
   }
 }
 
-.masthead {
-  border-bottom-color: mix(#fff, $primary-color, 75%);
-}
-
-.sidebar .author__avatar img {
-  max-width: 200px;
-}
-
-.sidebar .author__name {
-  font-weight: 700;
-  font-size: $type-size-4;
-}
-
-.sidebar .author__bio {
-  color: $gray;
-  font-size: $type-size-6;
-}
-
-.page__content {
-  h1 {
-    margin-top: 1.5em;
-    margin-bottom: 0.5em;
-    padding-bottom: 0.3em;
-    border-bottom: 2px solid mix(#fff, $primary-color, 75%);
-  }
-}
+/* Publications archive page
+   ---------------------------------------------------------------------- */
 
 .archive a {
   text-decoration: none;
+  border-bottom: none;
 
   &:hover {
-    text-decoration: underline;
+    text-decoration: none;
   }
 }
 
-.page__meta .pub-card__links {
-  padding-top: 0.5rem;
-  border-top: 1px solid $border-color;
+.archive .wordwrap {
+  font-size: 0.93em;
+  color: $dark-gray;
+  margin: 0.6em 0 1.8em;
+  padding: 0.75em 1em;
+  background: mix(#fff, $primary-color, 96%);
+  border-left: 3px solid $primary-color;
+  border-radius: 0 6px 6px 0;
+
+  a {
+    color: $primary-color;
+    font-weight: 500;
+    border-bottom: 1px solid mix(#fff, $primary-color, 70%);
+
+    &:hover {
+      border-bottom-color: $primary-color;
+    }
+  }
+}
+
+/* Publication detail page footer
+   ---------------------------------------------------------------------- */
+
+.page__meta {
+  margin-top: 2em;
+  color: $gray;
+  font-size: 0.85em;
+}
+
+.page__meta .pub-entry__links {
+  margin-top: 0;
+  padding-top: 1em;
+  border-top: 1px solid mix(#fff, $border-color, 30%);
+}
+
+/* Subtle fade-in on first paint */
+.page__inner-wrap {
+  animation: pageFadeIn 0.45s ease-out both;
+}
+
+@keyframes pageFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Selection
+   ---------------------------------------------------------------------- */
+::selection {
+  background: mix(#fff, $primary-color, 70%);
+  color: $darker-gray;
 }

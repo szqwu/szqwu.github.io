@@ -52,3 +52,7 @@ Honors and Awards
 
 * **Runner-up in HKUST Robomaster Internal Competition** -- Dec 2022
   * Acted as the software leader; designed and implemented the software system and drivers
+
+Service
+======
+* **Conference Reviewer**: CVPR, ECCV, ICCV, NeurIPS
