@@ -10,8 +10,6 @@ redirect_from:
 I am currently an MSR (MS in Robotics) student at [Carnegie Mellon University](https://www.cmu.edu/), advised by [Prof. Deva Ramanan](https://www.cs.cmu.edu/~deva/). 
 Before that, I obtained my Bachelor of Science degree in Computer Science and Mathematics at [The Hong Kong University of Science and Technology](https://hkust.edu.hk/), where I worked with [Prof. Chi-Keung Tang](https://cse.hkust.edu.hk/~cktang/bio.html) and [Prof. Yu-Wing Tai](https://yuwingtai.github.io/).
 
-My research interests lie in **computer vision**, **multimodality**, and **generative agents**, with a focus on bridging language models and embodied motion understanding.
-
 I am actively looking for researcher / Ph.D. opportunities.
 
 # Research
