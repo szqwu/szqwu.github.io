@@ -3,7 +3,7 @@ title: "Navigating Motion Agents in Dynamic and Cluttered Environments through L
 collection: publications
 category: manuscripts
 permalink: /publications/LLM_Navigate
-excerpt: 'Yubo Zhao\*, **Qi Wu**\*, Yifan Wang, Xinhang Liu, Yu-Wing Tai, Chi-Keung Tang'
+excerpt: 'Yubo Zhao\*, **Qi Wu**\*, Yifan Wang\*, Xinhang Liu, Yu-Wing Tai, Chi-Keung Tang'
 date: 2025-06-05
 venue: 'arXiv'
 paperurl: 'https://arxiv.org/abs/2503.07323'
